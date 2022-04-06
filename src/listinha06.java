@@ -9,7 +9,7 @@ public class listinha06 {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
         System.out.println("digite o nome do vendedor: ");
-        String nomeVendedor = sc.nextLine();
+        sc.nextLine();
         System.out.println("Informe o salário fixo: ");
         double salarioFixo = sc.nextDouble();
         System.out.println("Valor em vendas: ");
@@ -18,6 +18,7 @@ public class listinha06 {
         double r = salarioFixo + comissao;
 
         DecimalFormat four = new DecimalFormat("#0.00");
+        System.out.println("Valor da comissão R$ " + comissao);
         System.out.println("TOTAL = R$ " + four.format(r));
     }
 }
